@@ -1,0 +1,27 @@
+{% if page.menu %}
+
+{% assign pageTitle = page.title %}
+
+<section>
+	<div class="col-12">
+		<span id="logo" class="bold mt2 left"><a href="/"><i class="material-icons white">flare</i></a></span>
+
+		<ul class="menu list-reset">
+			{% assign sorted_pages = site.pages | sort:"order" %}
+
+			{% for page in sorted_pages %}
+				{% if page.nav %}
+					{% if page.title == pageTitle  %}
+						<li><a class="bold" href="{{ page.url }}">{{ page.title }}</a></li>
+					{% else %}
+						<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+					{% endif %}
+
+				{% endif %}
+			{% endfor %}
+			<li><a href="https://www.instagram.com/elainech0w/" title="thepetergng@gmail.com">insta/finsta</a></li>
+		</ul>
+	</div>
+</section>
+
+{% endif %}

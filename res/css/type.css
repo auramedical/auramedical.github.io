@@ -1,0 +1,268 @@
+/* TYPOGRAPHY */
+
+@font-face {
+  font-family: Space Grotesk;
+  src: url(/res/fonts/SpaceGrotesk-Light.woff2);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Space Grotesk;
+  src: url(/res/fonts/SpaceGrotesk-Regular.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Space Grotesk;
+  src: url(/res/fonts/SpaceGrotesk-Medium.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Space Grotesk;
+  src: url(/res/fonts/SpaceGrotesk-SemiBold.woff2);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Space Grotesk;
+  src: url(/res/fonts/SpaceGrotesk-Bold.woff2);
+  font-weight: 700;
+}
+
+html {
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 100%;
+	font-variant-numeric: lining-nums;
+}
+
+body {
+	/*font-size: 2rem;*/
+}
+
+.h0, h0 { 
+	font-size: 10rem;
+	line-height: 1.2;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.h1, h1 { 
+	font-size: 4rem;
+	line-height: 1.6;
+	font-weight: 200;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.h2, h2 { 
+	font-size: 2rem;
+	line-height: 1.5;
+	font-weight: 200;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.h3, h3 { 
+	font-size: 1.5rem;
+	line-height: 2;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.h4, h4 { 
+	font-size: 1rem;
+	line-height: 2;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.h5, h5 {
+	font-size: .875rem;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.h6, h6 { 
+	font-size: .75rem;
+	line-height: 2;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.milli { 
+	font-size: .6rem;
+	line-height: 2;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 2;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+li {
+	font-size: 1rem;
+	line-height: 2;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.deca { font-size: 12pt }
+.hecto { font-size: 14pt }
+.kilo { font-size: 16pt }
+.mega { font-size: 18pt }
+.giga { font-size: 24pt }
+.tera { font-size: 28pt }
+
+@media (max-width: 375px) {
+	.title {
+		font-size: 9vw;
+	}
+}
+
+
+@media only screen and (max-width: 575px) {
+	html {
+	  font-size: 60%;
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 840px) {
+	html {
+	  font-size: 80%;
+	}
+}
+
+.light, .thin {
+	font-weight: 300;
+}
+
+.normal, .book, .regular {
+	font-weight: 400;
+}
+
+.primary-font--news, .news, strong {
+	font-weight: 600;
+}
+
+.primary-font--medium, .medium, .bold {
+	font-weight: 700;
+}
+
+/* LINKS */
+
+/* unvisited link */
+a:link {
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+	text-decoration: none;
+}
+
+/* selected link */
+a:active {
+	text-decoration: none;
+}
+
+a.active {
+	display: inline-block;
+	font-weight: bold;
+	color: white;
+	background-color: black;
+	/*padding: 0 4pt;*/
+}
+
+.active-underline {
+	display: inline-block;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+/* unvisited link */
+nav a:link {
+	color: #ffffff;
+}
+
+/* visited link */
+nav a:visited {
+	color: #ffffff;
+}
+
+/* mouse over link */
+nav a:hover {
+	color: #ffffff;
+}
+
+/* selected link */
+nav a:active {
+	color: #ffffff;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ol {
+	padding-left: 1.5rem;
+}
+
+button, .button {
+	font-size: 16pt;
+	text-transform: uppercase;
+	width: 100%;
+	min-height: 52pt;
+	font-family: 'Clan-News';
+	font-weight: 700;
+}
+
+button .secondary, .buttonSecondary {
+	font-size: 16pt;
+	text-transform: uppercase;
+	width: 100%;
+	min-height: 52pt;
+	font-family: 'Clan-News';
+	font-weight: 700;
+}
+
+button .textLink, .textLink {
+	font-size: 16pt;
+	text-transform: uppercase;
+	width: 100%;
+	min-height: 52pt;
+	font-family: 'Clan-News';
+	font-weight: 700;
+}
+
+blockquote {
+	padding: 16pt;
+	margin: 0;
+}
+
+blockquote.twitter-tweet {
+	margin: 10px 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(225, 232, 237);
+    border-image: initial;
+    border-radius: 5px;
+}

@@ -1,0 +1,29 @@
+{% if page.next.url or page.previous.url %}
+	<footer class="wrapper pt2 pb2">
+		<section>
+			<hr style="opacity: .3;">
+			<div class="">
+				{% if page.next.url %}
+					<span class="bold mt2 left">
+						<a class="py1 block normal lowercase" href="{{ page.next.url }}">
+							<i class="material-icons" style="font-size: 1.5rem; vertical-align: bottom;">skip_previous</i>
+							<div>previous: <strong>{{ page.next.title }}</strong></div>
+						</a>
+					</span>
+				{% endif %}
+
+				{% if page.previous.url %}
+					<span class="bold mt2 right">
+						<a class="right py1 block lowercase normal" href="{{ page.previous.url }}">
+							<i class="material-icons block right" style="font-size: 1.5rem; vertical-align: bottom;">skip_next</i>
+							<div style="clear: both;">next up: <strong>{{ page.previous.title }}</strong></div>
+						</a>
+					</span>
+				{% endif %}
+			</div>
+		</section>
+
+	</footer>
+{% endif %}
+
+{% include scripts.html %}

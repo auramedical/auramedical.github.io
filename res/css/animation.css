@@ -1,0 +1,41 @@
+/*
+  ANIMATION
+*/
+
+:root {
+  --emo: cubic-bezier(.4, 0, .2, 1);
+  --emo-in-out: cubic-bezier(.4, 0, .2, 1);
+  --emo-out: cubic-bezier(0, .2, .2, 1);
+}
+
+.notransition {
+  transition: none !important;
+}
+
+.delay-750ms {
+    transition-delay: 0.075s;
+}
+
+.overflow--scrolling {
+    -webkit-overflow-scrolling: touch;
+}
+
+.rotate {
+	animation-name: rotateRight;
+	animation-duration: 20s;
+	animation-delay: 0;
+	animation-iteration-count: infinite;
+	animation-direction: forward;
+	animation-timing-function: linear;
+}
+
+@keyframes rotateRight {
+  /* You could think of as "step 1" */
+  0% {
+    transform: rotate(0deg) scale(1.5);
+  }
+  /* You could think of as "step 2" */
+  100% {
+    transform: rotate(360deg) scale(1.5);
+  }
+}
